@@ -1,0 +1,179 @@
+
+/* Google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+/* bootstrap icons  */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css");
+
+:root {
+  --clr-primary: rgba(114, 9, 175, 0.856) !important;
+  --clr-secondary: rgba(154, 6, 240, 0.856) !important;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'font-family: ''Poppins', sans-serif;
+}
+
+.navbar {
+   background: transparent !important;
+  /* background: linear-gradient(354deg, rgba(153, 233, 225, 0.834) 51%, rgba(98, 102, 221, 0.764) 100%) !important; */
+}
+
+.coding-service-logo{
+  color: var(--clr-primary);
+}
+
+.nav-item a:hover {
+  color: rgba(154, 6, 240, 0.6) !important;
+}
+
+.menu_active {
+  border-bottom: 1px solid rgba(154, 6, 240, 0.6);
+}
+
+.brand-name {
+  color: var(--clr-primary);
+}
+
+@media screen and (max-width: 768px) {
+  .menu_active {
+    border:none;
+  }
+
+  .hero-Background_Image {
+    display: none;
+  }
+  .coding-service-logo{
+    font-size: 1rem !important;
+  }
+  iframe {
+    width: 300px;
+    height: 400px;
+  }
+  .cardImage {
+    min-height: 300px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .heroAnimation {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero-Background_Image {
+    display: none;
+  }
+  .card-img-top {
+    height: 20vh !important;
+    object-fit: cover !important;
+  }
+}
+
+
+brand-tagline__subtext {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.animated {
+   
+  animation-name: marginShift !important;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 1.2s;
+  transition: 0.5s;
+  animation-direction: alternate;
+  position: relative;
+  min-width: 300px;
+}
+
+@keyframes marginShift{
+  
+      0% {
+        transform: translateY(5px);
+      }
+
+      100% {
+        transform: translateY(-5px);
+        }
+    
+}
+
+.animated2 {
+   
+  animation-name: marginShift2 !important;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  transition: 0.5s;
+  animation-direction: alternate;
+  position: relative;
+}
+
+@keyframes marginShift2{
+  
+      0% {
+        transform: scale(1.05);
+      }
+
+      100% {
+        transform: scale(1);
+        }
+    
+}
+
+.footer-container {
+  background-color: rgba(154, 6, 240, 0.1);
+}
+.footer {
+   padding: 1em;
+   margin: 1em;
+}
+
+.servicesCard {
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.card-img-top {
+  width: 100% !important; 
+  height: 15vw !important;
+  object-fit: cover !important;
+}
+
+.app-service__Image{
+  width: 100% !important; 
+  height: 25vw !important;
+  object-fit: cover !important;
+}
+
+.servicesCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(154, 6, 240, 0.6);
+}
+
+.hero-Background_Image {
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 10vw;
+}
+.app-service__Image {
+  min-height: 300px;
+}
+
+
+
+
+
